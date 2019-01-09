@@ -1,13 +1,3 @@
-﻿## Chat Room in Cocos Game Program (crossing Platform)
-
-
-
-
-**1. Download**
-Install node.js, npm.
-
-**2. Add Server/app.js**
-```js
 const express = require('express');
 const app = express();
 const http = require('http').Server(app);
@@ -32,43 +22,10 @@ app.get('/',(req,res)=>{
  http.listen(3000, ()=>{
      console.log('listening on http://127.0.0.1:3000');
  });
-```
 
-**3. Command Line**
-```bash 
-cd C:\GitHub\CocosChatRoom\Server
 
-npm init
+// ***** ChatRoom Functions *****
 
-package name: (server) package
-version: (1.0.0)
-description: Chat Room in Cocos Game Program (crossing Platform)
-entry point: (app.js)
-test command:
-git repository: https://git@github.com/mopack/CocosChatRoom.git
-keywords: CocosChatRoom
-author: Mopack
-license: (ISC)
-
-npm install express --save
-npm install socket.io --save
-npm install underscore --save
-
-node app
-```
-
-Open Webpage http://127.0.0.1:3000. Success if you see "Hello world".
-
-**4. Append Server/app.js**
-
-Creating Server ChatRoom Functions
-- sio.on:	Listen
-- sio.emit:	Serve
-- connection:	
-- socket:	Client's Request
-- socket.on:	Handle Function
-
-```js
 //保存使用者的陣列
 var userList = {};
 //接收用戶端的連接
@@ -175,5 +132,3 @@ sio.on('connection',socket=>{
         socket.emit('game_pong');
     });
 });
-```
-
