@@ -1,14 +1,14 @@
 {
   "name": "package",
   "version": "1.0.0",
-  "description": "",
+  "description": "Chat Room in Cocos Game Program (crossing Platform)",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mopack/CocosChatRoom.git"
+    "url": "git+https://git@github.com/mopack/CocosChatRoom.git"
   },
   "keywords": [
     "CocosChatRoom"
@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/mopack/CocosChatRoom/issues"
   },
-  "homepage": "https://github.com/mopack/CocosChatRoom#readme"
+  "homepage": "https://github.com/mopack/CocosChatRoom#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0",
+    "underscore": "^1.9.1"
+  }
 }
